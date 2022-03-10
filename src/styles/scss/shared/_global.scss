@@ -1,0 +1,61 @@
+@import '../mixins/_mixins';
+
+@font-face {
+  font-family: 'Hacen Tunisia';
+  src: local('Hacen Tunisia'), local('HacenTunisia'),
+    url('../../../assets/fonts/HacenTunisia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hacen Tunisia Bd';
+  src: local('Hacen Tunisia Bd'), local('HacenTunisiaBd'),
+    url('../../../assets/fonts/HacenTunisiaBd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hacen Tunisia Lt';
+  src: local('Hacen Tunisia Lt'), local('HacenTunisiaLt'),
+    url('../../../assets/fonts/HacenTunisiaLt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Hacen Tunisia';
+  color: $color-black;
+}
+html {
+  direction: rtl;
+}
+section,
+footer {
+  padding: 2rem 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fw-semibold;
+}
+p {
+  @include fontFamily($ff-light, $fs-medium, $fw-light);
+}
+.btn-primary {
+  @include Button(rgba($color-main, 0.8), $color-white);
+  @include transition(all, 0.5, ease-in-out);
+}

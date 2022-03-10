@@ -1,0 +1,44 @@
+@import '../mixins/_mixins';
+.news {
+  background: #f0f5f8;
+
+  .header-wrapper {
+    @include flex(row, space-between, center);
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    @include fontFamily($ff-bold, $fs-regular, $fw-semibold);
+    svg {
+      fill: $color-main;
+    }
+  }
+  .grid-wrapper {
+    display: grid;
+    gap: 1rem;
+    @media screen and (min-width: $media-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $media-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+      padding-bottom: 0.5rem;
+      @media screen and (min-width: $media-lg) {
+        img {
+          max-height: 133px;
+        }
+      }
+    }
+    h5 {
+      font-weight: $fw-light;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.125rem;
+      padding-inline: 1rem;
+      color: $color-light-black;
+    }
+  }
+}
