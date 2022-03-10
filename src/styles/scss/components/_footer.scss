@@ -18,9 +18,9 @@ footer {
     .bg-img {
       img {
         height: 50%;
+        max-height: 630px;
       }
       @media screen and (min-width: $media-lg) {
-        max-height: 630px;
         position: absolute;
       }
     }
