@@ -21,10 +21,12 @@ footer {
     .bg-img {
       img {
         height: 50%;
+        width: 100%;
+        position: absolute;
         max-height: 630px;
       }
       @media screen and (min-width: $media-lg) {
-        position: absolute;
+        position: relative;
       }
     }
     ul {

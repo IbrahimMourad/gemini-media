@@ -79,7 +79,7 @@ const FooterWrap = () => {
   );
   return (
     <footer>
-      <div className="right-side" style={{ height: dHeight || '400px' }}>
+      <div className="right-side" style={{ minHeight: dHeight || '400px' }}>
         <div className="bg-img">
           <img
             ref={heighttRef}
@@ -88,8 +88,8 @@ const FooterWrap = () => {
             alt="footer img"
             style={{ height: dHeight || '400px' }}
           />
+          {renderUL}
         </div>
-        {renderUL}
       </div>
       {renderPanel()}
     </footer>
