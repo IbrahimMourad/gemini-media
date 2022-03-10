@@ -12,7 +12,10 @@ footer {
   }
   .right-side {
     width: 100%;
+    height: auto !important;
+
     @media screen and (min-width: $media-lg) {
+      height: auto;
       position: relative;
     }
     .bg-img {
@@ -29,7 +32,9 @@ footer {
       padding: 0;
       margin: 0;
       margin-inline: auto;
+      height: auto !important;
       @media screen and (min-width: $media-lg) {
+        height: auto;
         @include flex(column, flex-end, flex-end);
         position: relative;
         width: 70%;

@@ -8,7 +8,10 @@ const FooterWrap = () => {
   const [val, setVal] = useState(1);
   useEffect(() => {
     const height = heighttRef.current.clientHeight;
-    setDHeight(height + 'px');
+    console.log(height);
+    if (height) {
+      setDHeight(height + 'px');
+    }
   }, [dHeight]);
 
   const renderPanel = () => {
@@ -27,7 +30,7 @@ const FooterWrap = () => {
     <>
       <ul
         className="list-unstyled  mb-0 d-none d-lg-flex"
-        style={{ height: dHeight || 'auto' }}
+        style={{ minHeight: dHeight || 'auto' }}
       >
         <li>
           <Button className={val === 1 && 'active'} onClick={() => setVal(1)}>
@@ -76,13 +79,14 @@ const FooterWrap = () => {
   );
   return (
     <footer>
-      <div className="right-side" style={{ minHeight: dHeight || '400px' }}>
+      <div className="right-side" style={{ height: dHeight || '400px' }}>
         <div className="bg-img">
           <img
             ref={heighttRef}
             className="img-fluid"
             src="images/footer.jpg"
-            alt=""
+            alt="footer img"
+            style={{ height: dHeight || '400px' }}
           />
         </div>
         {renderUL}
