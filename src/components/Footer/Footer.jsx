@@ -34,7 +34,7 @@ const FooterWrap = () => {
           className="bg-img"
           style={{ minHeight: dHeight || '400px' }}
           data-aos="fade-up"
-          data-aos-duration="1200"
+          data-aos-duration="1500"
           data-aos-offset="0"
         >
           <div className="wrapper">

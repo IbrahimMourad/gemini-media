@@ -8,7 +8,7 @@ const Panel = ({ title, children }) => {
           <div
             className="weight-form"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
           >
             <h5>{title}</h5>
             <form>
@@ -74,7 +74,7 @@ const Panel = ({ title, children }) => {
           <div
             className="bmi-section"
             data-aos="fade-up"
-            data-aos-duration="1200"
+            data-aos-duration="1500"
             data-aos-offset="0"
           >
             <h5>BMI</h5>
