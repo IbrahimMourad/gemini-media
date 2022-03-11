@@ -11,15 +11,23 @@ const App = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    setIsLoading(false);
+    setTimeout(() => setIsLoading(false), 2000);
   }, []);
-  if (isLoading) return <Spinner />;
+
   return (
-    <main className="app">
-      <Carousel />
-      <LatestNews />
-      <Footer />
-    </main>
+    <>
+      {isLoading ? (
+        <div className="spinner-wrap">
+          <Spinner animation="grow" />
+        </div>
+      ) : (
+        <main className="app">
+          <Carousel />
+          <LatestNews />
+          <Footer />
+        </main>
+      )}
+    </>
   );
 };
 
