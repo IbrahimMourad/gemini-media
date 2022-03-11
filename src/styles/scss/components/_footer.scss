@@ -19,35 +19,39 @@ footer {
       position: relative;
     }
     .bg-img {
-      img {
-        height: 50%;
-        width: 100%;
-        position: absolute;
-        max-height: 630px;
-      }
-      @media screen and (min-width: $media-lg) {
-        position: relative;
+      position: relative;
+      .wrapper {
+        @media screen and (min-width: $media-lg) {
+          position: absolute;
+        }
+        img {
+          max-height: 630px;
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
     ul {
       @include flex(row, center, center);
       padding: 0;
-      margin: 0;
       margin-inline: auto;
-      height: auto !important;
+      margin-block: 1rem;
       @media screen and (min-width: $media-lg) {
-        height: auto;
         @include flex(column, flex-end, flex-end);
-        position: relative;
-        width: 70%;
+        height: 100%;
+        position: absolute;
+        width: 100%;
         margin: 0;
         margin-right: auto;
+        li {
+          width: 60%;
+          .btn-primary {
+            width: 100%;
+          }
+        }
       }
     }
-    li,
-    .btn-primary {
-      width: 100%;
-    }
+
     .btn-primary {
       background: #66c9e0;
 
@@ -81,8 +85,8 @@ footer {
     }
     .weight-form {
       grid-column: span 2;
-      margin-block: 2rem;
       @media screen and (min-width: $media-lg) {
+        margin-block: 2rem;
         margin-bottom: 0;
       }
       h5 {
@@ -140,10 +144,7 @@ footer {
     .bmi-section {
       background: #60bcd3;
       padding: 2rem 1rem;
-      margin-block: 0;
-      @media screen and (min-width: $media-lg) {
-        margin-block: 2rem;
-      }
+      margin-top: 2rem;
     }
     p {
       color: $color-white;

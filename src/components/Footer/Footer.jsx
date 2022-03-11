@@ -26,69 +26,55 @@ const FooterWrap = () => {
         return <Panel title="جدول التطعيمات" />;
     }
   };
-  const renderUL = (
-    <>
-      <ul
-        className="list-unstyled  mb-0 d-none d-lg-flex"
-        style={{ minHeight: dHeight || 'auto' }}
-      >
-        <li>
-          <Button className={val === 1 && 'active'} onClick={() => setVal(1)}>
-            إحسب وزنك المثالي
-          </Button>
-        </li>
-        <li>
-          <Button className={val === 2 && 'active'} onClick={() => setVal(2)}>
-            إحسب سعراتك الحرارية
-          </Button>
-        </li>
-        <li>
-          <Button className={val === 3 && 'active'} onClick={() => setVal(3)}>
-            حساب موعد الولادة المتوقع
-          </Button>
-        </li>
-        <li>
-          <Button className={val === 4 && 'active'} onClick={() => setVal(4)}>
-            جدول التطعيمات
-          </Button>
-        </li>
-      </ul>
-      <ul className="list-unstyled  d-lg-none">
-        <li>
-          <Button className={val === 1 && 'active'} onClick={() => setVal(1)}>
-            إحسب وزنك المثالي
-          </Button>
-        </li>
-        <li>
-          <Button className={val === 2 && 'active'} onClick={() => setVal(2)}>
-            إحسب سعراتك الحرارية
-          </Button>
-        </li>
-        <li>
-          <Button className={val === 3 && 'active'} onClick={() => setVal(3)}>
-            حساب موعد الولادة المتوقع
-          </Button>
-        </li>
-        <li>
-          <Button className={val === 4 && 'active'} onClick={() => setVal(4)}>
-            جدول التطعيمات
-          </Button>
-        </li>
-      </ul>
-    </>
-  );
+
   return (
     <footer>
       <div className="right-side" style={{ minHeight: dHeight || '400px' }}>
-        <div className="bg-img">
-          <img
-            ref={heighttRef}
-            className="img-fluid"
-            src="images/footer.jpg"
-            alt="footer img"
-            style={{ height: dHeight || '400px' }}
-          />
-          {renderUL}
+        <div className="bg-img" style={{ minHeight: dHeight || '400px' }}>
+          <div className="wrapper">
+            <img
+              ref={heighttRef}
+              className="img-fluid"
+              src="images/footer.jpg"
+              alt="footer img"
+              style={{ height: dHeight || '400px' }}
+            />
+          </div>
+
+          <ul className="list-unstyled">
+            <li>
+              <Button
+                className={val === 1 && 'active'}
+                onClick={() => setVal(1)}
+              >
+                إحسب وزنك المثالي
+              </Button>
+            </li>
+            <li>
+              <Button
+                className={val === 2 && 'active'}
+                onClick={() => setVal(2)}
+              >
+                إحسب سعراتك الحرارية
+              </Button>
+            </li>
+            <li>
+              <Button
+                className={val === 3 && 'active'}
+                onClick={() => setVal(3)}
+              >
+                حساب موعد الولادة المتوقع
+              </Button>
+            </li>
+            <li>
+              <Button
+                className={val === 4 && 'active'}
+                onClick={() => setVal(4)}
+              >
+                جدول التطعيمات
+              </Button>
+            </li>
+          </ul>
         </div>
       </div>
       {renderPanel()}
