@@ -75,7 +75,6 @@ const Panel = ({ title, children }) => {
             className="bmi-section"
             data-aos="fade-up"
             data-aos-duration="1500"
-            data-aos-offset="0"
           >
             <h5>BMI</h5>
             <p>

@@ -8,7 +8,6 @@ const FooterWrap = () => {
   const [val, setVal] = useState(1);
   useEffect(() => {
     const height = heighttRef.current.clientHeight;
-    console.log(height);
     if (height) {
       setDHeight(height + 'px');
     }
@@ -35,7 +34,7 @@ const FooterWrap = () => {
           style={{ minHeight: dHeight || '400px' }}
           data-aos="fade-up"
           data-aos-duration="1500"
-          data-aos-offset="0"
+          data-aos-offset="200"
         >
           <div className="wrapper">
             <img

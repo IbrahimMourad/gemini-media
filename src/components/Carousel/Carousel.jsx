@@ -31,7 +31,7 @@ const CarouselWrapper = () => {
         <Carousel.Caption>
           <p className="mb-0">نحن شركاء رحلتك</p>
           <h2 className="h1 mb-0">نحو حياة صحية سعيدة</h2>
-          <Button className="mt-3">المزيد</Button>
+          <Button>المزيد</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,7 +39,7 @@ const CarouselWrapper = () => {
         <Carousel.Caption>
           <p className="mb-0">نحن شركاء رحلتك</p>
           <h2 className="h1 mb-0">نحو حياة صحية سعيدة</h2>
-          <Button className="mt-3">المزيد</Button>
+          <Button>المزيد</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,7 +47,7 @@ const CarouselWrapper = () => {
         <Carousel.Caption>
           <p className="mb-0">نحن شركاء رحلتك</p>
           <h2 className="h1 mb-0">نحو حياة صحية سعيدة</h2>
-          <Button className="mt-3">المزيد</Button>
+          <Button>المزيد</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
