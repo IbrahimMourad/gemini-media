@@ -15,7 +15,12 @@ const LatestNews = () => {
         </div>
         <div className="grid-wrapper">
           {data.map((el) => (
-            <div key={el.id} className="card">
+            <div
+              key={el.id}
+              className="card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img className="card-img-top" src={el.img} alt={el.text} />
               <h5 className="card-title">{el.text}</h5>
               <p className="card-text">{el.desc}</p>

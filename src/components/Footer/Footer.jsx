@@ -30,7 +30,12 @@ const FooterWrap = () => {
   return (
     <footer>
       <div className="right-side" style={{ minHeight: dHeight || '400px' }}>
-        <div className="bg-img" style={{ minHeight: dHeight || '400px' }}>
+        <div
+          className="bg-img"
+          style={{ minHeight: dHeight || '400px' }}
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <div className="wrapper">
             <img
               ref={heighttRef}

@@ -5,7 +5,11 @@ const Panel = ({ title, children }) => {
     <div className="footer-form-container">
       {children || (
         <>
-          <div className="weight-form">
+          <div
+            className="weight-form"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h5>{title}</h5>
             <form>
               <div className="check-wrap">
@@ -67,7 +71,11 @@ const Panel = ({ title, children }) => {
               <button className="btn btn-primary">إحسب</button>
             </form>
           </div>
-          <div className="bmi-section">
+          <div
+            className="bmi-section"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             <h5>BMI</h5>
             <p>
               هي معادلة حسابية طبية تبين لكم كيفية حساب نسبه وزنك علي طولك بمعني
