@@ -35,6 +35,7 @@ const FooterWrap = () => {
           style={{ minHeight: dHeight || '400px' }}
           data-aos="fade-up"
           data-aos-duration="1200"
+          data-aos-offset="0"
         >
           <div className="wrapper">
             <img
